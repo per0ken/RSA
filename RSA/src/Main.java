@@ -92,7 +92,7 @@ public class Main {
         BigInteger p, q, n, phiN, d;
         while(true) {
             p = randomPrimeNumber(bitsize1);
-            q = randomPrimeNumber(bitsize2);
+            q = randomPrimeNumber(bitsize1);
             n = multiplyingNumbers(p,q);
             phiN = phi(p,q);
             if (gcd(e,phiN).equals(BigInteger.ONE)) {
